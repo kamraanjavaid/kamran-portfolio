@@ -1,0 +1,88 @@
+/* General Styling */
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Outer Container - Positioned Below Navbar */
+.main-container-outer {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Inner Container */
+.main-container-inner {
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    width: 400px; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+/* Profile Image */
+.main-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #ffcc00;
+}
+
+/* Title */
+.main-title h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+/* Description */
+.main-desc p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.main-desc h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ddd;
+}
+
+/* Connect Icons */
+.connect-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.connect-icons svg {
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+}
+
+.connect-icons svg:hover {
+    color: #ffcc00;
+    transform: scale(1.2);
+}
+
+/* Responsive for Small Screens */
+@media screen and (max-width: 768px) {
+    .main-container-outer {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+    .main-container-inner{
+        margin-bottom: 20px;
+        width: 90%;
+    }
+}

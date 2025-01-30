@@ -1,0 +1,111 @@
+/* Hero Section - Stylish Background */
+.hero-container {
+    flex: 1; /* Takes remaining space */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Optional: Add a Background Image */
+.hero-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../assets/hero-bg.jpg") center/cover no-repeat;
+    opacity: 0.2; /* Faded effect */
+    z-index: -1;
+}
+
+/* Hero Text Styling */
+.hero-desc p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #ddd;
+}
+
+.hero-desc h1 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-desc h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+/* Hero Icons - Animations & Effects */
+.hero-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.hero-icons .icon {
+    font-size: 40px;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+}
+
+.hero-icons .html { color: #e44d26; }
+.hero-icons .css { color: #264de4; }
+.hero-icons .js { color: #f7df1e; }
+.hero-icons .react { color: #61dafb; }
+.hero-icons .figma { color: #a259ff; }
+
+.hero-icons .icon:hover {
+    transform: scale(1.3);
+    opacity: 0.8;
+}
+
+/* Call-to-Action Button */
+.hero-btn {
+    margin-top: 20px;
+}
+
+.hero-btn button {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: black;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.hero-btn button:hover {
+    background-color: #e6b800;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .main-container-outer {
+        flex-direction: column; /* Stack Main & Hero on small screens */
+        align-items: center;
+    }
+
+    .hero-container {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .hero-icons {
+        justify-content: center;
+    }
+}

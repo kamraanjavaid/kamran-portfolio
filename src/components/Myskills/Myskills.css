@@ -1,0 +1,91 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .myskills {
+    background-color: #302b63;
+    width: 90%;
+    margin: auto;
+    margin-top: 0px;
+  }
+  
+  /* Skills Container */
+  .skills-container {
+    width: 90%; /* Matches the width of the navbar */
+    max-width: 800px; /* Increase max-width */
+    margin: 30px auto;
+    text-align: center;
+    padding: 40px;
+    border: none;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); /* Add a slight blur effect for depth */
+  }
+  
+  /* Title */
+  .skills-title h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Skills Grid */
+  .skills-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for the first row */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  /* Individual Skill Box */
+  .skill-box {
+    background: #111;
+    color: #fff;
+    font-size: 20px; /* Increase font size */
+    font-weight: bold;
+    padding: 25px 40px; /* Increased padding for a bigger box */
+    width: 220px; /* Increase width of the skill box */
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(255, 204, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-box h3 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  /* Hover Effect */
+  .skill-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.8);
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .skills-container {
+      width: 90%;
+      max-width: 100%;
+    }
+  
+    .skills-boxes {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+      grid-template-rows: repeat(3, 1fr); /* 3 rows */
+    }
+  
+    .skill-box {
+      font-size: 18px;
+      padding: 15px;
+      width: 180px; /* Adjust width for smaller screens */
+    }
+  }
+  
