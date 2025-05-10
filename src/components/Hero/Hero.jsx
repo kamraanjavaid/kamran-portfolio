@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHtml5, faCss3Alt, faJs, faReact, faFigma } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
 import "./Hero.css";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -16,7 +17,7 @@ const Hero = () => {
       >
         <p>👋 Hi, I'm</p>
         <h1>Kamran Javaid</h1>
-        <h3>Web Developer & UI/UX Designer</h3>
+        <h3>Frontend developer</h3>
         <p>
           Passionate about building interactive websites and seamless user experiences.
           I love working with modern web technologies to create stunning and efficient solutions.
@@ -43,7 +44,9 @@ const Hero = () => {
         whileHover={{ scale: 1.1 }} 
         transition={{ duration: 0.2 }}
       >
-        <button>🚀 Explore My Work</button>
+        <Link to="/services" style={{ textDecoration: "none" }}>
+        <button>🚀 Explore My Services</button>
+        </Link>
       </motion.div>
     </div>
   );

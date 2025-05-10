@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <nav className={`nav-container ${scrolled ? "scrolled" : ""}`}>
       <div className="logo">
-        <h1>Kamran's Code Lab</h1>
+        <h1>Kamran.dev</h1>
       </div>
 
       {/* Menu Button for Mobile */}

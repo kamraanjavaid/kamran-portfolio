@@ -22,7 +22,7 @@ const Main = () => {
         </div>
         <div className="main-desc">
           <p>Specialization</p>
-          <h3>Frontend Developer & UI/UX Designer</h3>
+          <h3>Frontend Developer</h3>
           <p>Based in</p>
           <h3>Rawalpindi, Pakistan</h3>
         </div>
