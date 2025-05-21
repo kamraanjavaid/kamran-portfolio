@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
+import Logo from "./Logo";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -26,7 +27,7 @@ const Navbar = () => {
   return (
     <nav className={`nav-container ${scrolled ? "scrolled" : ""}`}>
       <div className="logo">
-        <h1>Kamran.dev</h1>
+        <h1 style={{display:"flex",alignItems:"center"}}>Kamran.dev<Logo/></h1>
       </div>
 
       {/* Menu Button for Mobile */}
