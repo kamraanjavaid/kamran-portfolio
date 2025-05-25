@@ -2,10 +2,18 @@ import project1 from "../../assets/portfolioImg.png";
 import project2 from "../../assets/project2.png";
 import project3 from "../../assets/fitnessAppDesign.png";
 import project4 from "../../assets/projectImg4.png";
+import webitsol from "../../assets/webitsol.png";
 import project5 from "../../assets/CARe.png";
 
 
 const projectsData = [
+  {
+    id: 0,
+    name: "Webit Sol Website",
+    description: "I designed and developed this responsive and modern website for WebitSol, a digital solutions company. The site showcases their services, client testimonials, and contact information with smooth animations and a clean UI. Built using Next.js and Framer Motion, the site reflects professional branding and performance optimization tailored to WebitSol’s business goals.",
+    imgURL: webitsol,
+    link: "https://webit-sol.vercel.app/",
+  },
   {
     id: 1,
     name: "Portfolio Website",
