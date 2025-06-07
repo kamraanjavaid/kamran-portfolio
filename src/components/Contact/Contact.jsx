@@ -33,7 +33,7 @@ const Contact = () => {
       </div>
 
       <div className="contact-section">
-        {/* Contact Form */}
+
         <div className="contact-form">
           <form onSubmit={onSubmit} className="contact-right">
             <label htmlFor="name">Your Name</label>
@@ -66,7 +66,6 @@ const Contact = () => {
           </form>
         </div>
 
-        {/* Contact Info */}
         <div className="contact-info">
           <div className="contact-icons">
             <a href="https://www.linkedin.com/in/kamran-javaid-37baa626a/" target="_blank" rel="noopener noreferrer">

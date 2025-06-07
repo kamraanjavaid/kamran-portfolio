@@ -1,10 +1,9 @@
-/* Hero Section - Stylish Background */
 .hero-container {
-    flex: 1; /* Takes remaining space */
+    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content horizontally */
-    justify-content: center; /* Center content vertically */
+    align-items: center; 
+    justify-content: center; 
     text-align: center;
     padding: 60px 20px;
     color: white;
@@ -13,7 +12,6 @@
     overflow: hidden;
 }
 
-/* Optional: Add a Background Image */
 .hero-container::before {
     content: "";
     position: absolute;
@@ -22,11 +20,10 @@
     width: 100%;
     height: 100%;
     background: url("../../assets/hero-bg.jpg") center/cover no-repeat;
-    opacity: 0.2; /* Faded effect */
+    opacity: 0.2; 
     z-index: -1;
 }
 
-/* Hero Text Styling */
 .hero-desc p {
     font-size: 16px;
     margin: 5px 0;
@@ -48,7 +45,6 @@
     margin-bottom: 10px;
 }
 
-/* Hero Icons - Animations & Effects */
 .hero-icons {
     display: flex;
     gap: 20px;
@@ -71,7 +67,6 @@
     opacity: 0.8;
 }
 
-/* Call-to-Action Button */
 .hero-btn {
     margin-top: 20px;
 }
@@ -93,10 +88,9 @@
     transform: scale(1.1);
 }
 
-/* Responsive Design */
 @media screen and (max-width: 1024px) {
     .main-container-outer {
-        flex-direction: column; /* Stack Main & Hero on small screens */
+        flex-direction: column; 
         align-items: center;
     }
 
@@ -108,4 +102,14 @@
     .hero-icons {
         justify-content: center;
     }
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+.icon:hover {
+  transform: scale(1.2);
 }
