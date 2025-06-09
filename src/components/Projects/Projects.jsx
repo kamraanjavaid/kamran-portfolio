@@ -25,6 +25,7 @@ const Projects = () => {
             <img src={project.imgURL} alt={project.name} />
             <div className="project-details">
               <h2>{project.name}</h2>
+              <p style={{color:"yellowgreen"}}>{project.tech}</p>
               <button className="link-btn"><a href={project.link} target="_blank">View</a></button>
               <button
                 className="desc-btn"

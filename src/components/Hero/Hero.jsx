@@ -15,7 +15,6 @@ const skills = [
 const Hero = () => {
   return (
     <div className="hero-container">
-      {/* Hero Content Animation */}
       <motion.div
         className="hero-desc"
         initial={{ opacity: 0, y: 50 }}
