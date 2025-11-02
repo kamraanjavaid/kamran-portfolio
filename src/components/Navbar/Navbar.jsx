@@ -52,9 +52,9 @@ const Navbar = () => {
           </Link>
         </ul>
 
-        <div className={`connect-btn ${menuOpen ? "open" : ""}`}>
-          <button>Connect</button>
-        </div>
+        {/* <div className={`connect-btn ${menuOpen ? "open" : ""}`}>
+          <button>My Resume</button>
+        </div> */}
       </div>
     </nav>
   );

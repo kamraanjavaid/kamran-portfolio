@@ -1,0 +1,115 @@
+/* MyExperience.css */
+
+.experience-section {
+  width: 90%;
+  margin: 10px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.exp-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: .05em;
+  color: #ffffff;
+  margin-bottom: 2.3rem;
+  text-shadow: 0 2px 8px rgba(76, 109, 176, 0.09);
+  text-align: center;
+}
+
+.exp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.exp-card {
+  background: linear-gradient(101deg, #fff 80%, #f5f9fd 100%);
+  border-radius: 15px;
+  box-shadow: 0 5px 18px rgba(96, 125, 175, 0.09);
+  padding: 2.2rem 1.2rem;
+  transition: transform .18s cubic-bezier(.22,.68,.49,.96);
+  border-left: 8px solid #6366f1;
+  position: relative;
+  overflow: hidden;
+}
+
+.exp-card:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 14px 38px rgba(81, 120, 211, 0.11);
+  border-left-color: #2563eb;
+}
+
+.exp-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .7rem 1.1rem;
+  margin-bottom: 1.15rem;
+}
+
+.exp-role {
+  font-size: 1.28rem;
+  font-weight: 700;
+  color: #3730a3;
+  letter-spacing: .04em;
+}
+
+.exp-company {
+  font-size: 1.07rem;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(90deg, #6366f1 60%, #4343ea 100%);
+  padding: .23rem .88rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(99, 102, 241, 0.07);
+}
+
+.exp-location,
+.exp-duration {
+  font-size: 1.03rem;
+  color: #58698a;
+  font-weight: 500;
+  background: #e7edfa;
+  padding: .18rem .65rem;
+  border-radius: 7px;
+  margin-left: .15rem;
+}
+
+.exp-desc {
+  font-size: 1.14rem;
+  color: #242a38;
+  margin-top: .2rem;
+  line-height: 1.7;
+  letter-spacing: .01em;
+}
+
+.exp-card::after {
+  content: "";
+  position: absolute;
+  right: -45px;
+  top: -45px;
+  width: 90px;
+  height: 90px;
+  background: radial-gradient(circle, #6366f1 22%, transparent 65%);
+  opacity: 0.18;
+}
+
+@media (max-width: 650px) {
+  .experience-section {
+    padding: 1.1rem .3rem;
+    max-width: 100%;
+  }
+  .exp-title {
+    font-size: 1.4rem;
+    margin-bottom: .8rem;
+  }
+  .exp-header {
+    gap: .34rem .39rem;
+  }
+  .exp-card {
+    padding: 1rem .42rem;
+    border-left-width: 5px;
+    border-radius: 10px;
+  }
+}
