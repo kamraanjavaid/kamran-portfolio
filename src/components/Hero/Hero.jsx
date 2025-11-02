@@ -21,9 +21,9 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <p>👋 Hi, I'm</p>
+        <p>Hi, I'm</p>
         <h1>Kamran Javaid</h1>
-        <h3>Frontend Developer</h3>
+        <h3>Full-Stack Web Developer</h3>
         <p>
           Passionate about building interactive websites and seamless user experiences.
           I love working with modern web technologies to create stunning and efficient solutions.
@@ -55,7 +55,7 @@ const Hero = () => {
         transition={{ duration: 0.2 }}
       >
         <Link to="/services" style={{ textDecoration: "none" }}>
-          <button>🚀 Explore My Services</button>
+          <button>Explore My Services</button>
         </Link>
       </motion.div>
     </div>
